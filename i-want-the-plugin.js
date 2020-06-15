@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         I Want the Plugin
-// @version      0.1.1
+// @version      0.1.2
 // @description  强制启用插件
 // @author       Hippo
 // @match        https://www.figma.com/file/*

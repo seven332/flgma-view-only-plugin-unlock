@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         I Want the Plugin
-// @version      0.1.2
+// @version      0.1.3
 // @description  强制启用插件
 // @author       Hippo
 // @match        https://www.figma.com/file/*
@@ -17,7 +17,7 @@
     const InstalledPluginResponseTextKey = "InstalledPluginResponseText";
 
     function onClickPluginUrlButton() {
-        pluginUrl = window.prompt("Plugin URL:", GM_getValue(PluginUrlKey, ""));
+        let pluginUrl = window.prompt("Plugin URL:", GM_getValue(PluginUrlKey, ""));
         console.log("Input plugin url: ", pluginUrl);
         GM_setValue(PluginUrlKey, pluginUrl);
     }

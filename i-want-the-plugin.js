@@ -18,8 +18,12 @@
 
     function onClickPluginUrlButton() {
         let pluginUrl = window.prompt("Plugin URL:", GM_getValue(PluginUrlKey, ""));
-        console.log("Input plugin url: ", pluginUrl);
-        GM_setValue(PluginUrlKey, pluginUrl);
+        if (pluginUrl) {
+            console.log("Input plugin url: ", pluginUrl);
+            GM_setValue(PluginUrlKey, pluginUrl);
+        } else {
+            console.log("Input plugin url cancelled");
+        }
     }
 
     function addPluginUrlButton() {

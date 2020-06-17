@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         I Want the Plugin
-// @version      0.1.3
+// @version      0.1.4
 // @description  强制启用插件
 // @author       Hippo
 // @match        https://www.figma.com/file/*
@@ -10,6 +10,7 @@
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @run-at       document-start
+// @downloadURL  https://raw.githubusercontent.com/seven332/flgma-view-only-plugin-unlock/master/i-want-the-plugin.js
 // ==/UserScript==
 
 (function () {
